@@ -1,0 +1,12 @@
+# QuestBoard — Railway Deployment Config
+# https://railway.app/docs/reference/project-service
+
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "bunx prisma generate && bunx prisma db push && bun run start"
+healthcheckPath = "/"
+healthcheckTimeout = 30
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
