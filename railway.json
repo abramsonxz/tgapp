@@ -1,6 +1,6 @@
 {
   "build": {
-    "builder": "railpack"
+    "builder": "nixpacks"
   },
   "deploy": {
     "startCommand": "bunx prisma generate && bunx prisma db push && bun run start",
