@@ -3,7 +3,7 @@
     "builder": "nixpacks"
   },
   "deploy": {
-    "startCommand": "npx prisma generate && npx prisma db push && node server.js",
+    "startCommand": "./node_modules/.bin/prisma generate && ./node_modules/.bin/prisma db push && node server.js",
     "restartPolicyType": "on_failure",
     "restartPolicyMaxRetries": 10
   }
