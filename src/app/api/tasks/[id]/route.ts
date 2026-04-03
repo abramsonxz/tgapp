@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
-import { DIFFICULTY_EXP } from "../user/route";
+import { DIFFICULTY_EXP } from "@/app/api/user/route";
 
 // PUT /api/tasks/[id] — Update a task
 export async function PUT(

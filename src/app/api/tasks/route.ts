@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
-import { DIFFICULTY_EXP } from "../user/route";
+import { DIFFICULTY_EXP } from "@/app/api/user/route";
 
 // GET /api/tasks?telegramId=xxx&status=all|active|completed
 export async function GET(req: NextRequest) {

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/db";
-import { calculateLevel, DIFFICULTY_EXP } from "../../user/route";
+import { calculateLevel, DIFFICULTY_EXP } from "@/app/api/user/route";
 
 // POST /api/tasks/[id]/complete — Toggle task completion and award EXP
 export async function POST(
