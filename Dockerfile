@@ -11,7 +11,9 @@ RUN bun install --frozen-lockfile
 
 # Rebuild the source code only when needed
 FROM base AS builder
+RUN apk add --no-cache libc6-compat
 WORKDIR /app
+RUN npm install -g bun
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
